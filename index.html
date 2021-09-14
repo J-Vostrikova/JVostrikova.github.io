@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Задание 1</title>
+</head>
+<body bgcolor='Cornsilk' text='black'>
+<p> <font size="16" color ="black" face="Times New Roman" >Задание 1</font> </p>
+<ol
+<font size="5"</font>
+<li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+<li><a href="https://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+<li><a href="ftp://example.com/file.txt">Cсылка на файл на сервере FTP без авторизации</a></li>
+<li><a href="ftp://user:22/2@example.com/file.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
+<li><a href="https://ru.wikipedia.org/wiki/Марианский_желоб#Факты">Ссылка на фрагмент страницы некоторго сайта</a></li>
+<a id="Сокращенная ссылка от А к Б"></a>
+<li><a href="#Сокращенная ссылка от А к Б">Cсылкa на фрагмент текущей страницы</a></li>
+<li><a href="https://yandex.ru/images/search?text=космос">Cсылка с двумя параметрами в URL</a></li>
+<li>Навигация по сайту Владивостока|VL.ru
+<ul>
+<li><a href="https://www.newsvl.ru"title="Новости Влпдивостока">Новости</a></li>
+<li><a href="https://www.vl.ru/afisha/vladivostok"title="Афиша во Владивостоке">Афиша</a></li>
+<li><a href="https://www.farpost.ru/vladivostok/job/vacancy/?utm_source=vl.ru&utm_medium=job_widget&utm_term"title="Вакансии во Владивостоке">Вакансии</a></li>
+<li><a href="https://www.farpost.ru/vladivostok/?utm_source=vl.ru&utm_medium=left_menu&utm_term=FarPost"title="Объявления от частных лиц и компаний">Farpost</a></li>
+</ul>
+<li><a title="ссылка без href">Ссылка без href</a></li>
+<li><a href="javascript:void(0);">Сайт отсутствует</a></li>
+<li><a href="https://pixabay.com/ru/images/search/" rel="nofollow">Cсылка, по которой запрещен переход поисковикам</a>
+<li><noindex><a href="https://pixabay.com/ru/images/search/">Ссылкуа, запрещенная для индексации</a></noindex></li>
+<li><a href="https://ru.wikipedia.org/wiki/КВ-1">Танк КВ-1</a> является таким же символом победы в Великой Отечественной войне, как и легендарный танк <a href="https://ru.wikipedia.org/wiki/Т-34">T-34.</a>
+<li><a href="https://www.artfile.ru/b.php?i=414205"><img src="https://i.artfile.ru/s/414205_271010_16_ArtFile_ru.jpg" alt="www.ArtFile.ru"border="0"></a>
+<li><map name="map0">
+    <area shape="rect" coords="0, 0, 402, 42" href="#area1">
+    <area shape="rect" coords="0, 42, 132, 204" href="#area2">
+    <area shape="poly" coords="260, 96, 331, 42, 403, 96, 377, 180, 286, 180" href="#area4">
+    <area shape="circle" coords="180, 100, 90" href="#area3">
+    <area shape="rect" coords="0, 0, 402, 204" href="#area5">
+</map>
+<img src="imagemap.gif" border="0" width="402" height="204" usemap="#map0"></li>
+<li><a href="file.html">Расположен в текущем каталоге</a></li>
+<li><a href="about/file.html">Расположен в каталоге about</a></li>
+<li><a href="../file.html">Расположен в каталоге уровнем выше текущего</a></li>
+<li><a href="../../file.html">Расположен в каталоге двумя уровнями выше</a></li>
+<li><a href="/">Сокращенная ссылка на главную страницу</a>
+<li><a href="cat"title="Адрес А:http://mysite.ru/pets/dog   Адрес Б:http://mysite.ru/pets/cat">Сокращенная ссылка от А к Б</a></li>
+</ol>
+
+<hr> <form action="#" method="post">
+<label>
+Имя:<br />
+<input type="text" name="username" value="">
+</label><br />
+<label>
+E-mail:<br />
+<input type="email" name="email" value="">
+</label><br />
+<label>
+Дата рождения:<br />
+<input type="date" name="birthday" value=""></label><br/>
+<form action="#" method="post">
+
+Пол:<br />
+<label><input type="radio" checked="checked"
+name="radio-group-1" value="Значение1" />
+женский</label>
+<label><input type="radio"
+name="radio-group-1" value="Значение2" />
+мужской</label><br /></form>
+
+Количество конечностей:<br />
+<label><input type="radio" checked="checked"
+name="radio-group-1" value="Значение1" />
+0</label>
+<label><input type="radio"
+name="radio-group-1" value="Значение2" />
+1</label>
+<label><input type="radio"
+name="radio-group-1"
+Example Domain
+example.com
+Example Domain
+www.example.com
+ 
+value="Значение2" />
+2</label>
+<label><input type="radio"
+name="radio-group-1" value="Значение2" />
+3</label>
+<label><input type="radio"
+name="radio-group-1" value="Значение2" />
+4</label>
+<label><input type="radio"
+name="radio-group-1" value="Значение2" />
+5</label><br />
+
+<label>
+Список (combobox):<br />
+<select name="field-name-3">
+<option value="Значение1">Бессмертие</option>
+<option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+<option value="Значение3">Левитация</option>
+</select>
+</label><br />
+
+<label>
+Биография:<br />
+<textarea name="field-name-2"></textarea>
+</label><br />
+
+Чекбокс:<br />
+<label><input type="checkbox" checked="checked"
+name="check-1" />с контрактом ознакомлен (а)</label><br />
+
+Кнопка отправки формы
+<input type="submit" value="Отправить" />
