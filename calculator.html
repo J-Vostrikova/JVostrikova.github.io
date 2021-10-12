@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body>
+    <h2><strong>Стоимость определенного веса товара</strong></h2></p>
+    Выберете единицу веса:
+        <select id="type_weight">
+            <option value="1">Выбрать</option>
+            <option value="2">килограмм(кг)</option>
+            <option value="3">грамм(г)</option>
+        </select>
+    <p>Вес<input type="text" id="weight" value=""></st></p>
+    <p>Цена<input type="text" id="pay"value=""></p>
+    <button onclick="calc();">Рассчитать стоимость</button>
+    <div id ="cost">
+    <script>
+        function calc() {
+            type_weight  = document.getElementById('type_weight').value;
+            switch (type_weight) {
+                case "2":
+                    cena = 1;
+                    break  
+                case "3":
+                    cena = 0.001;
+                    break   
+            }
+            weight  = document.getElementById('weight').value;
+            pay  = document.getElementById('pay').value;
+            if(weight == ""){
+                alert("Вы не указали вес товара");
+            } else if(pay == ""){
+                alert("Вы не указали цену");
+            }
+              else {
+                cost = weight* pay*cena;
+                document.getElementById('cost').innerHTML = "Стоимость товара "+ cost +" руб.";
+            }
+        }
+    </script>
+</body>
+</html>
