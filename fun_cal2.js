@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function(event){
     let type_weight = type_weightAll[0];
     let f1 = true, f2=true, f3=true;
     let cost = document.getElementById("cost");
-    cost.innerHTML = "введите данные";
+    cost.innerHTML = "Введите данные";
     let re = /^\d+$/;
     let weightHTML = document.getElementById("weight");
     weightHTML.addEventListener("change", function(event) 
