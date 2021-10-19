@@ -1,134 +1,130 @@
-function getPrice(quantity, type) 
+function getPrice(weight, type_weight) 
 {
-	let result = document.getElementById("result");
-	if (quantity != 0) {
-		result.innerHTML = type * quantity + " рублей";
-	} else {
-		result.innerHTML = "введите корректные данные";
-	}
+    let cost = document.getElementById("cost");
+    if (weight != 0) {
+        cost.innerHTML = type_weight * weight + " рублей";
+    } else {
+        cost.innerHTML = "Введите корректные данные";
+    }
 }
-
-function getPriceOptions(quantity, type, option) {
-	let result = document.getElementById("result");
-	if (quantity == 0) {
-		result.innerHTML = "введите корректные данные";
-	} else {
-		switch (option) {
-			case "1":
-				result.innerHTML = ((type + 300) * quantity) + " рублей";
-				break;
-			case "2":
-				result.innerHTML = ((type + 320) * quantity) + " рублей";
-				break;
-			case "3":
-				result.innerHTML = ((type + 370) * quantity) + " рублей";
-				break;
-		}
-	}
+function getPriceOptions(weight, type_weight, option) {
+    let cost = document.getElementById("cost");
+    if (weight == 0) {
+        cost.innerHTML = "Введите корректные данные";
+    } else {
+        switch (option) {
+            case "1":
+                cost.innerHTML = ((type_weight + 800) * weight) + " рублей";
+                break;
+            case "2":
+                cost.innerHTML = ((type_weight + 850) * weight) + " рублей";
+                break;
+            case "3":
+                cost.innerHTML = ((type_weight + 1000) * weight) + " рублей";
+                break;
+        }
+    }
 }
-
-window.addEventListener('DOMContentLoaded', function(event) {
-	console.log("DOM fully loaded and parsed");
-  	let radioListener = "";
-	let quantity = 0;
-	let typeAll = [350, 0, 482];
-	let type = typeAll[0];
-  	let f1 = true, f2=true, f3=true;
-	let result = document.getElementById("result");
-	result.innerHTML = "введите данные";
-
-	let re = /^\d+$/;
-
-	let quantityHTML = document.getElementById("quantity");
-	quantityHTML.addEventListener("change", function(event) 
-  	{
-		if (re.test(event.target.value)) 
-    	{
-      		quantity = parseInt(event.target.value);
+window.addEventListener('DOMContentLoaded', function(event){
+    console.log("DOM fully loaded and parsed");
+    let radioListener = "";
+    let weight = 0;
+    let type_weightAll = [250, 0, 658];
+    let type_weight = type_weightAll[0];
+    let f1 = true, f2=true, f3=true;
+    let cost = document.getElementById("cost");
+    cost.innerHTML = "введите данные";
+    let re = /^\d+$/;
+    let weightHTML = document.getElementById("weight");
+    weightHTML.addEventListener("change", function(event) 
+    {
+        if (re.test(event.target.value)) 
+        {
+            weight = parseInt(event.target.value);
             if(f1 && f2) 
-			{
-		        getPrice(quantity, type);
+            {
+                getPrice(weight, type_weight);
             } 
-			else if(!f1) 
-			{
-              	getPriceOptions(quantity, type, radioListener);
-              	f1 = true;
+            else if(!f1) 
+            {
+                getPriceOptions(weight, type_weight, radioListener);
+                f1 = true;
             } 
             else if(!f2 && !f3)
             {
-                result.innerHTML = (type + 245) * quantity;
+                cost.innerHTML = (type_weight + 100) * weight;
                 f2 = true;
-		        f3 = true;
+                f3 = true;
             } 
             else if(f3)
             {
-		        getPrice(quantity, type);
-		    }
+                getPrice(weight, type_weight);
+            }
 
-            let k = document.getElementsByName("type");
-	        k[0].addEventListener("change", function(event) 
-          	{
-		        let select = event.target;
-		        let radios = document.getElementById("options");
-		        let checkbox = document.getElementById("property");
-		      	if (select.value == "cookies") 
-          	{
-			    radios.style.display = "none";
-			    checkbox.style.display = "none";
-			    type = typeAll[0];
-			    getPrice(quantity, type);
-		    } 
-          	else if (select.value == "candies") 
-          	{
-			    radios.style.display = "none";
-			    checkbox.style.display = "block";
-			    type = typeAll[2];
-			    getPrice(quantity, type);
-		    } 
-          	else 
-          	{
-			    radios.style.display = "block";
-				checkbox.style.display = "none";
-			    type = typeAll[1];
-			    getPrice(quantity, type);
-		    }
-		    k[0].blur();
-          	});
+            let a = document.getElementsByName("type_weight");
+            a[0].addEventListener("change", function(event) 
+            {
+                let select = event.target;
+                let radios = document.getElementById("options");
+                let checkbox = document.getElementById("property");
+                if (select.value == "gram") 
+            {
+                radios.style.display = "none";
+                checkbox.style.display = "none";
+                type_weight = type_weightAll[0];
+                getPrice(weight, type_weight);
+            } 
+            else if (select.value == "t") 
+            {
+                radios.style.display = "none";
+                checkbox.style.display = "block";
+                type_weight = type_weightAll[2];
+                getPrice(weight, type_weight);
+            } 
+            else 
+            {
+                radios.style.display = "block";
+                checkbox.style.display = "none";
+                type_weight = type_weightAll[1];
+                getPrice(weight, type_weight);
+            }
+            a[0].blur();
+            });
 
-          	let radioHTML = document.querySelectorAll(".options input[type=radio]");
-	        radioHTML.forEach(function(radio) 
-          	{
-		        radio.addEventListener("change", function(event) 
-            	{
-			    	radioListener = event.target.value;
-			    	getPriceOptions(quantity, type, radioListener);
-              		f1 = false;
-		    	});
-	        });
+            let radioHTML = document.querySelectorAll(".options input[type_weight=radio]");
+            radioHTML.forEach(function(radio) 
+            {
+                radio.addEventListener("change", function(event) 
+                {
+                    radioListener = event.target.value;
+                    getPriceOptions(weight, type_weight, radioListener);
+                    f1 = false;
+                });
+            });
 
-          	let o = document.getElementsByName("property");
-	        o[0].addEventListener("change", function(event)   
-          	{
-		        if (event.target.checked && quantity != 0) 
-            	{
-			        result.innerHTML = (type + 154) * quantity + " рублей";
-              		f2 = false;
-					f3 = false;
-		        } 
-            	else 
-            	{
-			        getPrice(quantity, type);
-					f3 = true;
-		        }
-	        });
+            let b = document.getElementsByName("property");
+            b[0].addEventListener("change", function(event)   
+            {
+                if (event.target.checked && weight != 0) 
+                {
+                    cost.innerHTML = (type_weight + 350) * weight + " рублей";
+                    f2 = false;
+                    f3 = false;
+                } 
+                else 
+                {
+                    getPrice(weight, type_weight);
+                    f3 = true;
+                }
+            });
 
-		} 
+        } 
     else 
     {
-		quantity = 0;
-		result.innerHTML = "введите корректные данные";
-	}
-	quantityHTML.blur();
-	});
+        weight = 0;
+        cost.innerHTML = "Введите корректные данные";
+    }
+    weightHTML.blur();
+    });
 
 });
