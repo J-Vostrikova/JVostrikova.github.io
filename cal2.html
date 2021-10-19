@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
     <head>
         <meta charset="utf-8">
         <title>Задание 6</title>
@@ -12,29 +11,24 @@
 
     <div class="container-fluid">
         <div class="row d-flex text-center px-10">
-            <div id="one" class="col-7 px-0 mx-auto border border-danger">
+            <div id="one" class="col-7 px-0 mx-auto border border-white">
                 <h1>
                     Стоимость товара
                 </h1>
           </div>
-          <div id="two" class="col-7 mt-1 pb-1 mx-auto px-0 border border-danger">
+          <div id="two" class="col-7 mt-1 pb-1 mx-auto px-0 border border-white">
               <form>
-                <label>
-                    Выбирите единицу товара:<br/>
-                    <select name="type_weight">
-                        <option value="1">Выбрать</option>
-                        <option value="2">тонн(т)</option>
-                        <option value="3">килограмм(кг)</option>
-                        <option value="4">грамм(г)</option>
-                    </select>
-                </label><br/>
                     <label>
-                        Вес:<br/>
-                        <input type="text" id="weight" value=""
+                        Вес товара:<br/>
+                        <input id="weight"name="weight"type="text" />
                     </label><br/>
                     <label>
-                        Цена, кг/руб:<br/>
-                        <input type="text" id="pay"value="">
+                        Выбирите единицу товара:<br/>
+                        <select name="type">
+                            <option value="gram">грамм(г)</option>
+                            <option value="kg">килограмм(кг)</option>
+                            <option value="t">тонна(т)</option>
+                        </select>
                     </label><br/>
                     <div class="options" id="options">
                         Выбирите опцию товара:<br/> 
@@ -48,7 +42,7 @@
                     </div>
                 </form>
             </div>
-            <div id="three" class="col-7 mt-1 pb-1 mx-auto px-0 border border-danger">
+            <div id="three" class="col-7 mt-1 pb-1 mx-auto px-0 border border-white">
                 <h3 id="cost">...</h3>
             </div>
         </div>
