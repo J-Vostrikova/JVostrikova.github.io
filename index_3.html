@@ -2,9 +2,10 @@
 <html lang="ru">
     <head>
         <link href="style.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
         <title>GREENway</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
     <div id = "header">
@@ -12,17 +13,19 @@
             <h1>GREENway<h1>
                 </div>
             <img class = "logo" src="logo.png" alt = "logo">
-    <div id ="menu">
-        <div class="bg-1">
-            <ul >
-                <li><a href="#GREENway">О нас</a></li>
-                <li><a href="#Гиперссылки">Список</a></li>
-                <li><a href="#Таблица">Таблица</a></li>
-                <li><a href="#Форма">Форма</a></li>
+    <div id = "menu">
+        <nav class="nav">
+            <div class  = "bg-1">
+                <ul>
+               <li><a href="#a">Список</a></li>
+               <li><a href="#table">Таблица</a></li>
+               <li><a href="#form">Форма</a></li>
             </ul>
         </div>
+        </nav>
     <div class="bg-2"></div>
  </div>  
+ <div class="contentblock" id ="a">
  <h2 class="h2">Гиперссылки</h2>
         <ol>
             <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a><a href="https://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
@@ -57,7 +60,9 @@
             <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
             <li><a href="cat"title="Адрес А:http://mysite.ru/pets/dog   Адрес Б:http://mysite.ru/pets/cat">Сокращенная ссылка от А к Б</a></li>
         </ol>
+        </div>
         <hr> <form action="#" method="post"></form>
+        <div class ="contentblock" id ="table">
         <h2 class="h2">Таблица</h2>
         <table class="table">
             <tr class="table_odd">
@@ -89,8 +94,10 @@
                 <td colspan="3">Ячейка 52 объединенная с 53 и 54</td>
             </tr>
         </table>
+        </div>
 </li>
 <hr> <form action="#" method="post">
+<div class contentblock" id ="form">
 <h2 class="h2">Форма</h2>
 <label>
 Имя:<br />
@@ -166,9 +173,9 @@ name="check-1" />с контрактом ознакомлен (а)</label><br />
         </div>
         <div class="myclr"></div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
-
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
