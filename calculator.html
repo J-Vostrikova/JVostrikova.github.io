@@ -25,6 +25,10 @@
             }
             weight  = document.getElementById('weight').value;
             pay  = document.getElementById('pay').value;
+        
+            if (weight <= 0 || pay <= 0){
+                alert("Вы указали некоректные данные")
+            }
             if(weight == ""){
                 alert("Вы не указали вес товара");
             } else if(pay == ""){
@@ -32,9 +36,11 @@
             }
               else {
                 cost = weight* pay*cena;
+              }
                 document.getElementById('cost').innerHTML = "Стоимость товара "+ cost +" руб.";
             }
-        }
-    </script>
+        
+   </script>
+
 </body>
 </html>
