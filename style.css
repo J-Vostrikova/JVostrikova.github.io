@@ -136,17 +136,6 @@ h1{
     line-height: 120%; 
 }
 
-.form select{
-    background-color: #d6fdb1;
-}
-
-.form input{
-    background-color: #d6fdb1;
-}
-
-.form textarea{
-    background-color: #d6fdb1;
-}
 .h2{
     color: rgb(0, 0, 0);
     text-align: center;
