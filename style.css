@@ -1,7 +1,8 @@
 body {
     padding:0px; 
     margin:0; 
-    background: url(phon.jpg); 
+    background: url(phon.jpg);
+    background-size: 100% auto;
     font-size:18px; 
     font-family:Arial, Sans-serif;
 }
