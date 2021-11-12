@@ -10,26 +10,28 @@
 <body>
     <div class="container-fluid">
         <div class="row d-flex text-center px-5">
-            <div id="one" class="rounded col-7 px-0 mx-auto border border-success">
+            <div id="one" class="rounded col-7 px-0 mx-auto border border-danger">
                 <h1>
                     Калькулятор стоимости товара
                 </h1>
           </div>
-            <div id="two" class="col-7 mt-1 pb-1 mx-auto px-0 border border-white">
+            <div id="two" class="col-7 mt-1 pb-1 mx-auto px-0 border border-danger">
                 Вес товара:<br>
                 <input product="text" id="weight" value="">
             </br>
             </div>
-            <div id="three" class="col-7 mt-1 pb-1 mx-auto px-0 border border-white">
+            <div id="three" class="col-7 mt-1 pb-1 mx-auto px-0 border border-danger">
                 Цена товара:<br>
                 <input product="text" id="pay" value="">
             </br>
             </div>
-            <div id="four" class="col-7 mt-1 pb-10 mx-auto px-0 border border-white">
-                <button onclick="calc();">Рассчитать стоимость</button>
+            <div id="four" class="col-7 mt-1 pb-10 mx-auto px-0 border border-danger">
+                <button id="my-button" onclick="return false;">Рассчитать стоимость</button>
             </div>
-            <div id="five" class="col-7 mt-1 pb-1 mx-auto px-0 border border-success"> 
-                <p id = "cost"></p>
+            <div id="five" class="col-7 mt-1 pb-1 mx-auto px-0 border border-danger"> 
+                <br/>
+        <div id="cost"></div>
+        <br/>
             </div>
         </div>
         </div>  
