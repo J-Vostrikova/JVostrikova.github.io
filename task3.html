@@ -4,30 +4,31 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GREENway</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="style3.css" type="text/css" rel="stylesheet">
+        <link href="adaptetion.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>     
-            <div id="head-site">
-                <h1>GREENway<h1>
-            </div>
-        <img class = "logo" src="logo.png" alt = "logo">
+                <div id="head-site">
+                    <h1>GREENway<h1>
+                </div>
+            <img class = "logo" src="logo.png" alt = "logo">
         </header>
         <div id = "menu">
-        <nav class="nav">
-        <div class  = "bg-1">
-            <ul class ="container">
-                <li><a href="#a">Список</a></li>
-                <li><a href="#table">Таблица</a></li>
-                <li><a href="#form">Форма</a></li>
-            </ul>
-        </div>
-        </nav>
-        <div class="bg-2"></div>
-        </div>
+            <div class  = "bg-1">
+                <ul class = "one">
+                    <li><a href="#a">Список</a></li>
+                    <li><a href="#table">Таблица</a></li>
+                    <li><a href="#form">Форма</a></li>
+                </ul>
+            </div>
+            <div class="bg-2"></div>
+            </div>
+            
         <div class="contentblock" id = "a">
         <div class = "content-bg"
             <p>
+                <div class = "flex-container_element-1">
             <h2 class="h2">Гиперссылки</h2>
             <ol>
                 <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a>
@@ -63,11 +64,15 @@
                 <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
                 <li><a href="cat"title="Адрес А:http://mysite.ru/pets/dog   Адрес Б:http://mysite.ru/pets/cat">Сокращенная ссылка от А к Б</a></li>
             </ol>
+            </div>
             </p>
             <hr> <form action="#" method="post"></form>
+            <div class="flex-container_element-2">
             <div class ="contentblock" id ="table"></div>
             <h2 class="h2">Таблица</h2>
+           
                 <table class="table">
+                   
                     <tr class="table_odd">
                         <th>Колонка 1</th>
                         <th>Колонка 2</th>
@@ -96,12 +101,16 @@
                         <td>Ячейка 17</td>
                         <td colspan="3">Ячейка 18 объединенная с ячейками: 19, 20</td>
                     </tr>
+              
+                
                 </table>
-        
-            <hr> <form action="#" method="post">
-            <div class = "forma">
-            <div class contentblock" id ="form">
+            </div>
+            <hr> <form action="#" method="post"> 
+            <div class = "forma"> 
+            <div class ="flex-container_element-3">
+            <div class contentblock" id ="form"></div>
                 <h2 class="h2">Форма</h2>
+             
                     <label>
                     Как тебя зовут?:<br />
                     <input name="field-name-1"
@@ -167,8 +176,9 @@
                     </form>
             </div>
             </div>
+            </div>
         </div>
-        </div>
+    </div>
     <foother>
         <div class="myclr"></div>
             <div class="podval">
