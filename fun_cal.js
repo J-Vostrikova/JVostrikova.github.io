@@ -8,18 +8,17 @@ pay.oninput = function(){
     this.value = this.value.replace(reg, '');    
 }
 function calc() {
-    let cost;
-    let weight = document.getElementById('weight').value;
-    let pay = document.getElementById('pay').value;
-    if (pay == '' || weight == ''){
-        alert("Вы ввели не все данные");
-    } else if (pay <= 0 || weight <= 0){
-        alert("Введите корректные данные");
+    let reg = /^\d+$/;
+    let cost = document.getElementById('cost');
+    let weight = document.getElementById('weight');
+    let pay = document.getElementById('pay');
+    if(reg.test(pay.value) && reg.test(weight.value)){
+        cost.innerHTML = "Стоимость заказа: " + parseFloat(weight.value) * parseFloat(pay.value) + ".00 руб.";
     } else{
-        cost = weight * pay;
-        document.getElementById('cost').innerHTML = "Стоимость товара "+ cost +".00 руб.";
+        alert(cost.innerHTML = "Введите корректные данные");
     }
-}
+    return false;
+  }
 window.addEventListener('DOMContentLoaded', function (_event) {
     console.log("DOM fully loaded and parsed");
     document.getElementById("my-button").addEventListener("click", calc);
