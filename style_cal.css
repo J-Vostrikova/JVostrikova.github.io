@@ -1,7 +1,8 @@
 #property, #options{
     display: none;
   }
-  
-  #one, #two, #three{
-    background-color: #d4c1b2;
+  #one, #two, #three, #four,  #five{
+    background-color: #db3b0abe;
   }
+
+  
