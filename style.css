@@ -1,73 +1,100 @@
-#header {
-    width:960px;
-     margin:0; 
-     padding:0;
-     background:#fff;
-     position: relative;
-    }
- .logo {
-    position: absolute;
-    top: 8px;
-    width: 100px;
-    height: 90px;
-    border: 0;
- }
- #menu { /*положение меню*/
-    text-align: center; 
+header {
+    width:100%;
+    height: 150px;
+    background: linear-gradient(0deg, #dee4ea,#f9fcff)
 }
-#menu li{ /*горизонталь*/
-    display:inline-block;
-    text-align: center;
-    padding:0 35px 0 0 ;
-}
-#menu a { /*размер квадратика*/
-    display:block; 
-    height:40px; 
-    padding:24px 27px 0 27px; 
-    color:#98FB98; 
-    text-decoration:none; 
-    text-transform:uppercase;
-}
-#menu a:hover { /*квадратики выбора, сплошной*/
-    background: #98FB98;
-} 
- h1{
+h1{
     color:#2E8B57;
-    font: 40px Georgia;
-    margin-left: 100px;
+    font: 50px Georgia;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 175px;
+} 
+.logo{
+    width: 180px;
+    height: 130px;
+    position: absolute;
+    float: left;
+    top: 20px; 
+ }
+nav ul{
+     list-style: none;
+     margin: 0;
+     padding: 8px;
+     text-align: center;
+ }
+nav a{
+     font-size:35px;
+     padding: 30px;
+     color:#ffff;
+     text-decoration: none;
+     
+ }
+nav a:hover{
+     color: #e4ff48;
+     text-decoration: none;
+ }
+nav li{
+     display: inline;
+ }
+.bg-1{
+    width:auto;
+    margin: 0;
+    height:60px; 
+    top:40px;
+    background:#2E8B57;
 }
 body { 
     font-family: Georgia, 'Times New Roman', Times, serif;   
-}
-.contentblock{ 
-    background-image:url(phon.jpg);
-    background-size: auto;
-    background-attachment: fixed; 
-	background-repeat: repeat-x;
 } 
-.content-bg {
+.phon1{
+     background-image: url(phon.jpg);
+     background-size: auto;
+     background-attachment: fixed; 
+     background-repeat: repeat-x;
+}
+.phon2 {
     background: #fff; 
     margin-left:17%;
     margin-right:17%;
     padding: 20px 40px; 
     text-align: justify;
-} 
+    font-size: 18px;;
+}
+section a{
+    color: #000; 
+    text-decoration: none; 
+   }
+   section a:visited {
+    color: #8F8E8E; 
+   } 
+   section a:hover {
+    color: #eee133; 
+    text-decoration: none; 
+   }
 .cl_img {
     max-width: 100%; height: auto;
 } 
 .h2{
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 25pt;
+    font-size: 22pt;
     font-weight: bold;
-    line-height: 10%;  
+    line-height: 10%; 
+    margin: 15px; 
+}
+.h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    line-height: 10%; 
+    margin: 25px; 
 }
 .bg-1 {
-    width:auto;
-    font-size: 15pt;
+    width:100%;
     height:64px; 
     background:#2E8B57;
-    padding:0 0 0 10px;
 }
 .bg-2 {
     width:99%; 
@@ -84,7 +111,8 @@ body {
     font-size: 15pt;
     line-height: 180%;  
     max-width:600px; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    word-wrap:break-word; 
 }
 .table_odd {
     background-color:#d6fdb1;
@@ -96,7 +124,7 @@ body {
 .forma{
     text-align: left;
     max-width:600px; 
-    font-size: 15pt;
+    font-size: 18pt;
     margin: 0 auto; 
     line-height: 120%; 
 }
@@ -104,13 +132,10 @@ body {
     width:auto;
     border-top:10px solid #2E8B57; 
 }
-.yellow {
-    width:99%; 
-    height:5px;
-    background:#98FB98; 
-    margin:0 auto;  
-}
+
 .p1 {
     text-align:center; 
-    padding: 10px 0 0 0;
-}
+    padding: 10px;
+    font-size: 16pt;
+    background: linear-gradient(0deg, #dee4ea,#f9fcff)
+} 
