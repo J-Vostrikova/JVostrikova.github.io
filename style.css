@@ -24,12 +24,11 @@ nav ul{
      text-align: center;
  }
 nav a{
-     font-size:30px;
+     font-size: 30pt;
      padding: 30px;
      color:#ffff;
-     text-decoration: none;
-     
- }
+     text-decoration: none;    
+}
 nav a:hover{
      color: #e4ff48;
      text-decoration: none;
@@ -60,7 +59,7 @@ body {
     padding: 20px 40px; 
     text-align: justify;
     font-size: 16pt;
-    padding-left: 15px;
+    padding-left: 15px; 
 }
 section a{
     color: #000; 
@@ -103,6 +102,9 @@ section a{
     background:#98FB98; 
     margin:0 auto;
 }
+.sec1, sec2{
+    padding-left: 15px;
+}
 .table{
     table-layout: fixed;
     width: 100%;
@@ -124,7 +126,7 @@ section a{
 }
 .forma{
     text-align: left;
-    max-width:600px; 
+    max-width: 600px; 
     font-size: 16pt;
     margin: 0 auto; 
     line-height: 120%; 
@@ -140,3 +142,4 @@ section a{
     font-size: 15pt;
     background: linear-gradient(0deg, #dee4ea,#f9fcff)
 } 
+
