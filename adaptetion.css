@@ -7,136 +7,133 @@
         font-size: 12pt;
     }
     .table{
-        font-size: 10pt;
-        line-height: 150%;  
-        max-width:90%; 
+        font-size: 13.5pt;
+        line-height: 150%;
     }
-    .forma{
-        font-size: 12pt;
+}
+
+@media only screen and (max-width:768px){ 
+    header{
+        height: 120px;
+    }
+    .logo{
+        width: 144px;
+        height: 104px;
+        top:16px;
+    }
+    h1{
+        font: 45px Georgia;
+        margin-top: 40px;
+        margin-left: 140px;
+    }
+    .bg-1{
+        height:50px; 
+        top: 30px;
+    }
+    nav a{
+        font-size:23pt;  
     }
     .h2{
         font-size: 18pt;
     }
-    #menu a {
-        font-size: 17pt;
+    .h3{
+        font-size: 18pt;
     }
-}
-
-@media only screen and (max-width:768px){
-   /* #header{
-       
-   } */ 
-   h1{
-    margin-top: 25px;
-    margin-left:80px;
-    color:#2E8B57;
-    font: 28px Georgia;
-}
-.logo {
-    top: 8px;
-    position: absolute;
-    width: 65px;
-    height: 55px;
-    border: 0;
- }
-
-.content-bg {
-    font-size: 12pt;
-}
-.table{
-    font-size: 10pt;
-    line-height: 150%;  
-    max-width:90%; 
-}
-.forma{
-    font-size: 12pt;
-}
-.h2{
-    font-size: 18pt;
-}
-#menu a {
-    font-size: 17pt;
-}
-}
-@media only screen and (max-width:480px){
-    .content-bg {
-        display: inline-flex; 
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* flex: 0 1 auto; */
-        word-wrap: break-word;
-        margin-left:10%;
-        margin-right:10%;
-        padding: 0 15px; 
-        text-align: justify;
-        font-size: 10pt;
-    } 
-      /* переместим 2 flex-элемент в конец */
-      .flex-container_element-1 {
-        order: 0;
-      }
-      .flex-container_element-2 {
-        order: 2;
-      }
-      .flex-container_element-3 {
-        order: 1;
-      }
-    
+    .phon2 {
+        margin-left: 12%;
+        margin-right: 12%;
+        font-size: 15pt;
+    }
     .table{
-        font-size: 5pt;
-        line-height: 200%;  
+        font-size: 12pt;
+        line-height: 150%;  
         max-width:90%; 
     }
     .forma{
-        font-size: 10pt;
+        font-size: 15pt;
     }
-    .h2{
-        font-size: 12pt;
+    .p1{
+        font-size: 13pt;
     }
-    #menu a {
-        font-size: 14pt;
+}
+@media only screen and (max-width:480px){
+    header{
+        height: 100px;
     }
-    .bg-1 {
-        display: inline-flex; 
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:center;
-        flex-direction: column;
-        width:100%;
-        height: auto;
-        background:#2E8B57;
-        padding:auto;
+    .logo{
+        width: 115px;
+        height: 85px;
+        top: 16px;
     }
-
-    .bg-2 {
-        width:99%; 
-        height:8px; 
-        background:#98FB98; 
-        margin:0 auto;
+    h1{
+    font-size: 23pt;
+    margin-left: 110px;
+    margin-top:35px;
     }
-    #menu { /*положение меню*/
-        text-align: center; 
-    }
-    #menu li{ /*горизонталь*/
-        display:inline-block;
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    nav li{
+        flex-grow:1;
+    }
+    nav a{
+        display: block;
+        padding: 10px;
         text-align: center;
-        font-size: 15pt;
-        padding:auto;
-        
+        margin-bottom: 2px;
+        text-decoration: none;
+        font-size: 16pt;
     }
-    #menu a { /*размер квадратика*/
-        display:block; 
-        height:20px; 
-        line-height: 1;
-        top: 10px;
-        padding:10px 5px 0 5px; 
-        color:#98FB98; 
-        text-decoration:none; 
-        text-transform:uppercase;
+    nav a{
+        background-color:#2E8B57;
     }
-    #menu a:hover { /*квадратики выбора, сплошной*/
-        background: #98FB98;
+    .bg-1{
+        background-color:#ffff;
+        height: 135px;
     } 
+    .h2{
+        font-size: 14pt;
+        margin: 10px;
+    }
+    .h3{
+        font-size: 14pt;
+    }
+    .phon2 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 12pt;
+    }
+    .table{
+        font-size: 10pt;
+        line-height: 150%;  
+        max-width:150%; 
+    }
+    .forma{
+        font-size: 12pt;
+    }
+    .p1{
+        font-size: 11pt;
+    }
+    .sec2, .sec3{
+        padding-left: 15px;
+        align-items: flex-start;
+    }
+    .section{
+        display: flex;
+        flex-flow: column wrap;
+    }
+   .container{
+       display: flex;
+        flex-flow: column;
+   }
+    .sec2{
+        order: 2;  
+    }
+    .sec3{
+        order:1;
+    }
 }
