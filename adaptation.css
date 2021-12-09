@@ -57,75 +57,79 @@
     }
 }
 @media only screen and (max-width:480px){
-    header{
-        height: 100px;
-    }
-    .logo{
-        width: 115px;
-        height: 85px;
-        top: 16px;
-    }
-    h1{
-    font-size: 23pt;
-    margin-left: 110px;
-    margin-top:35px;
-    }
-    nav ul{
+
+header{
+    display: flex;
+    align-items: center;
+    width: 960px;
+} 
+nav ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
-    }
-    nav li{
+}
+nav li{
         flex-grow:1;
-    }
-    nav a{
+}
+nav a{
         display: block;
         padding: 10px;
         text-align: center;
         margin-bottom: 2px;
         text-decoration: none;
         font-size: 16pt;
-    }
-    nav a{
-        background-color:#2E8B57;
-    }
-    .bg-1{
+}
+nav a{
+    display: flex;
+    flex-direction: column;
+    background-color:#2E8B57;
+}
+    
+.bg-1{
         background-color:#ffff;
         height: 135px;
-    } 
-    .h2{
-        font-size: 14pt;
-        margin: 10px;
-    }
-    .h3{
-        font-size: 14pt;
-    }
-    .phon2 {
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 12pt;
-    }
-    .table{
-        font-size: 10pt;
-        line-height: 150%;  
-        max-width:150%; 
-    }
-    .forma{
-        font-size: 12pt;
-    }
-    .p1{
-        font-size: 11pt;
-    }
-    .sec2, .sec3{
-        padding-left: 15px;
-        align-items: flex-start;
-    }
-    .section{
-        display: flex;
-        flex-flow: column wrap;
-    }
+}  
+
+.h2{
+    font-size: 14pt;
+    margin: 10px;
+}
+.h3{
+    font-size: 14pt;
+}
+.phon2{
+    background-color: azure;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table{
+    font-size: 10pt;
+    line-height: 150%;  
+    max-width:150%; 
+}
+.forma{
+    font-size: 12pt;
+}
+.p1{
+    font-size: 11pt;
+}
+.sec2, .sec3{
+    padding-left: 15px;
+    align-items: flex-start;
+}
+.section{
+    display: flex;
+    flex-flow: column wrap;
+}
+/* .podval, .p1{
+    display: flex;
+
+    width: 960px;  
+} */
+    /*обмен местами*/
    .container{
        display: flex;
         flex-flow: column;
