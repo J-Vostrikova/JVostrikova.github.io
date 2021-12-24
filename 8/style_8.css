@@ -14,7 +14,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 0 rgb(39, 61, 42);
     transition: background-color 0.5s ease 0s; 
-    background-color: rgb(112, 172, 115);
+    background-color: rgb(241, 136, 16);
     margin-top: 10px;
 }
 .popup-overlay{
@@ -24,7 +24,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #d8cdff;
+	background-color: #ffeb7ad7;
 	z-index: 100;
 	}
 	.popWindow{
@@ -35,7 +35,7 @@
 	margin-top: 40px;
 	left:50%;
 	box-shadow: 0 0 30px rgba(70, 47, 46, 0.788);
-	background-color: #fbcdff;
+	background-color: #ffeb7ad7;
     border-radius: 5px;
 	}
 	.popWindow h2{
