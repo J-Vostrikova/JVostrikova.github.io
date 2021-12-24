@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+   <selection>
+        <div class="main">
+            <div class="osn mt-4">
+                <div class="container pb-0">
+            <div class="row">
+                <div class="col-lg-12"><h1 class="text-center">Калькулятор стоимости заказа: </h1></div>
+            <div class="col-mb-12">
+            <form >
+                <div class="row mb-2">
+                    <div class="form-group col-md-3 col-sm-3">
+                        <div class="shadow p-3 mb-3 bg-white rounded">
+                            <input type="text" class="form-control" id="cena" placeholder="Введите cтоимость товара">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="form-group col-md-3 col-sm-3">
+                            <div class="shadow p-3 mb-3 bg-white rounded">
+                                <input type="text" class="form-control"  id="kol"  placeholder="Введите вес товара">
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="row col-12 mb-1">
+                    <p style="color: black"><span id="out">0.0</span> рублей</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-mb-1 col-12">
+                        <input type="button" name="adress" id="btn" class="btn btn-warning" value="Считать">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    </selection>   
+    <div class="osn mt-4">
+        <div class="container pb-2">
+        <div class="row"> <div class="col-lg-12"> <h1 class="text-center text-dark"></h1> </div> 
+        <div class = "shadow p-3 mb-4  bg-white rounded">
+        <div class="col-md-12 "> 
+    <form id="form ">
+            <label class=" p-3 mb-4  "style=" font-size: medium"><strong>Выберите товар:</strong>
+            </label> 
+        <select name="myselect">
+            <option value="1"> Кедровый грильяж с сосновой шишкой "Сибирский кедр"</option>
+            <option value="2"> Конфеты «А.Коркунов» </option>
+            <option value="3"> Марципановые фрукты "Grondard"</option>
+        </select>
+        <div class="calc-section">
+            <label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+                <span class="title__inline  p-3 mb-5 "><strong>Количество</strong></span>
+                <input type="number" min="1" max="200" value="1" id="square-input" class="title__inline input-short" />
+                <span class="title__inline"></span>
+            </label>
+        </div>
+        <div class="p-1 mb-1"></div>
+        <div class="calc-section" id="radios">
+            <div class="form-check">
+                <label class="radio-wrapper" data-name="mobile">
+                    <input type="radio" class="radio" name="type" value="159">"Ассорти" темный и молочный шоколад 
+                </label>
+            </div>
+    
+            <div class="form-check">
+                <label class="radio-wrapper" data-name="mobile">
+                    <input type="radio" class="radio" name="type" value="349">молочный шоколад 
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="radio-wrapper" data-name="mobile">
+                    <input type="radio" class="radio" name="type" value="369">темный шоколад
+                </label>
+            </div>
+        </div>
+    
+        <div class="calc-section" id="checkbox">
+            <span class="badge  mt-3 text-dark" style="font-size: medium">Выберите:</span>
+                <div class="form-check"> 
+                    <label>
+                        <input type="checkbox" class="checkbox" name="ceiling" value="156"> с орешками
+                    </label>
+                </div>
+        </div>
+    
+    
+        <div class="calc-price">
+            <div class="btn btn-warning mt-6">
+                <strong>Итоговая стоимость:</strong>
+            </div>
+            <span id="total-price"> 0.0 </span> рублей
+        </div>
+    </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+</main>
+
+<script src="fun_2.js"></script>
+<script src="fun.js"></script>
+</body>
+</html>
