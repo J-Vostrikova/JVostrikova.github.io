@@ -1,12 +1,4 @@
-let reg = /[A-Za-zА-Яа-я]/;
-let weight = document.querySelector('#kol');
-let pay = document.querySelector('#cena');
-weight.oninput = function(){
-    this.value = this.value.replace(reg, '');    
-}
-pay.oninput = function(){
-    this.value = this.value.replace(reg, '');    
-}
+
 var btn = document.querySelector('#btn');
 var out = document.querySelector('#out');
 var зфн = document.querySelector('#cena');
