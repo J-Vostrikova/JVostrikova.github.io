@@ -1,4 +1,4 @@
-.slick-list {
+/* .slick-list {
     overflow: hidden;
 }
 .slick-track{
@@ -54,4 +54,71 @@
 img{
     width: 400px;
     height: 300px;
+}
+ */
+/* показывает как ведет себя блок, если его размер превышает длину/ширину */
+/* hidden - переполняющее содержимое не отображается */
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.slider{
+    margin-top: 200px;
+    position: relative;
+    padding: 0px 50px;
+}
+/* расположение стрелок относительно изображений */
+.slider .slick-arrow{
+   position: absolute;
+   /* вертикальное положение */
+   z-index: 10;
+   top: 50%;  
+   margin: -30px 10px 0px 10px;
+   font-size: 0;
+   width:30px;
+   height: 37px;
+   border: none;
+ }
+
+/* стрелка вправо */
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('right.png') 0 0 / 100% no-repeat;
+}
+/* стрелка влево */
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('left.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 2px 20px;
+}
+/*низ кнопок*/
+.slider .slick-dots button{
+    font-size: 0;
+    width: 40px;
+    height: 14px;
+    background-color: #e1f2fa;
+    border-style:none;
+
+}
+/* оформление кнопок */
+.slider .slick-dots li.slick-active button{
+    /* заливка  */
+    background-color:rgba(139, 145, 230, 0.877) ;
+    border-style:none;
+}
+img{
+    width: 100%;
+    height: 100%;
 }
