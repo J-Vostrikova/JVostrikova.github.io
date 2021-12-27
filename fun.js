@@ -1,29 +1,27 @@
 
-var btn = document.querySelector('#btn');
+
+var b = document.querySelector('#but');
 var out = document.querySelector('#out');
-var cena = document.querySelector('#cena');
-var kol = document.querySelector('#kol');
-var c=cena.value;
-var k=kol.value;
+var pay = document.querySelector('#cena');
+var weight = document.querySelector('#kol');
+var p=pay.value;
+var w=weight.value;
 
 window.addEventListener('DOMContentLoaded', function (event) {
   console.log("DOM fully loaded and parsed");
-btn.onclick = function()
- { const r = /-+?|\b0[0-9]+/;
-  const r1 = /\D+/;
-  const r2 = /^$/;
-  var pro = parseInt(cena.value) *parseInt(kol.value);
-    if((r.test(cena.value) ||r.test(kol.value))===true ) {
-      alert("Введите корректные данные")
-
-}
- else if((r1.test(cena.value) ||r1.test(kol.value))===true ) {
-  alert("Введите корректные данные")
-
-}
-else if((r2.test(cena.value) ||r2.test(kol.value))===true ) {
-  alert("Введите корректные данные")
-
-}
-    else {out.innerHTML = pro;ob();} }
- });
+  b.onclick = function(){ 
+    const c1 = /\W/;     /*любая цифра, буква или знак подчеркивания*/
+    const c2 = /[^0-9]/; /*любая не цифра*/
+    const c3 = /^$/;     /*начало и конец(пустота)*/
+    var pro = parseInt(pay.value) *parseInt(weight.value);
+      if((c1.test(pay.value) ||c1.test(weight.value))===true || 
+         (c2.test(pay.value) ||c2.test(weight.value))===true ||
+         (c3.test(pay.value) ||c3.test(weight.value))===true) {
+        alert("Ошибка: введите корректные данные")
+      }
+      else {
+        out.innerHTML = pro;
+        ob();
+      } 
+  }
+});
