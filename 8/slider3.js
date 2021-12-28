@@ -30,7 +30,7 @@ $(".popup-form").submit(function() {
     $(".popup-submit").prop('disabled', true);
     $.ajax({
     type: "POST",
-    url: "https://formcarry.com/s/FlEQ63kk7IR",
+    url: "https://formcarry.com/s/eayAMlodaPh",
     data: th.serialize(),
     })
     //.done(function() {
