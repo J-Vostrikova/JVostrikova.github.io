@@ -205,27 +205,49 @@ footer p1 {
 @media screen and (min-width: 1024px) {
     header {
         height: 200px;
-    
     }
     .topnav{
       margin-top:-1%;
-      margin-bottom: 15px;
+      padding: 0;
       display: flex;
       flex-direction: row;
-      width: 80%;
-      margin: 0 auto;
-      
-      }
+      width: 960px;
+      margin: auto; 
 
-    .topnav a{ 
-        padding: 0 20px;
     }
-    main{
-        width: 960px;
-        margin:0 auto;
+    .topnav ul{
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .topnav a{ 
+        padding: 20px 100px;
+        font-size: 22pt;
     }
     li{
         font-size: 25px;
+        text-align: left;
+    }
+    .logotip{
+        box-sizing: border-box;
+        width: 200px;
+        height: 150px;
+        float: left;
+        margin-left: 330px;
+        display: flex;
+    }
+    header h1 {
+        margin-top: 20px;
+        color: #2E8B57;
+        text-align:left;
+        font-size: 50px ;
+        margin: 0 auto;
+        padding: 90px;
+    }
+    
+    main{
+        width: 960px;
+        margin:0 auto;
     }
     footer{
         padding: 10px;
@@ -233,14 +255,5 @@ footer p1 {
     .line{
         font-size: 35px;
     }
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .sec2{
-        order:0;
-    }
-    .sec3{
-        order:1;
-    }
 }
+
