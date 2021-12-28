@@ -17,8 +17,12 @@ body{
     color: #2E8B57;
     font-size: 50px;
     background: linear-gradient(0deg, #dee4ea,#f9fcff);
-}
 
+}
+#graficlogo{
+    width: 200px;
+    height: 150px;
+}
 #topnav{
     background: #2b9c5c;
     
