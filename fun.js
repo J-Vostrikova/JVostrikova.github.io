@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       }
       else {
         out.innerHTML = pro;
-        ob();
+        
       } 
   }
 });
