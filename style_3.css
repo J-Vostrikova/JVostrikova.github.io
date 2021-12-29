@@ -202,7 +202,7 @@ footer p1 {
 .sec3{
     order: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 984px) {
     header {
         height: 200px;
     }
@@ -233,7 +233,7 @@ footer p1 {
         width: 200px;
         height: 150px;
         float: left;
-        margin-left: 330px;
+        margin-left: 450px;
         display: flex;
     }
     header h1 {
@@ -242,7 +242,6 @@ footer p1 {
         text-align:left;
         font-size: 50px ;
         margin: 0 auto;
-        padding: 90px;
     }
     
     main{
